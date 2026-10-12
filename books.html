@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Browse Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h2>Campus Books</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Browse Available Books</h1>
+
+    <div class="box">
+      <label>Enter Book Title:</label>
+      <input type="text" id="search-input" placeholder="Type title here">
+      <button onclick="showEnteredTitle()">Show Book</button>
+      <p id="search-result"></p>
+    </div>
+
+    <div>
+      <button onclick="styleFirstBook()">Highlight Book 1</button>
+      <p id="request-message" style="color: green; font-weight: bold;"></p>
+    </div>
+
+    <div class="card-container">
+      <div class="card" id="browse-card-1">
+        <h3>Hindi</h3>
+        <p>Author: abc</p>
+        <p>Category: School</p>
+        <p>Condition: Good</p>
+        <button id="req-btn-1" onclick="requestBook('req-btn-1')">Mark as Requested</button>
+      </div>
+
+      <div class="card">
+        <h3>English</h3>
+        <p>Author: abcd</p>
+        <p>Category: School</p>
+        <p>Condition: New</p>
+        <button id="req-btn-2" onclick="requestBook('req-btn-2')">Mark as Requested</button>
+      </div>
+
+      <div class="card">
+        <h3>Maths</h3>
+        <p>Author: ABC</p>
+        <p>Category: School</p>
+        <p>Condition: Fair</p>
+        <button id="req-btn-3" onclick="requestBook('req-btn-3')">Mark as Requested</button>
+      </div>
+
+      <div class="card">
+        <h3>Cloud</h3>
+        <p>Author: AAA</p>
+        <p>Category: Collage</p>
+        <p>Condition: Good</p>
+        <button id="req-btn-4" onclick="requestBook('req-btn-4')">Mark as Requested</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

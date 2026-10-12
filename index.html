@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Campus Book Exchange</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h2>Campus Books</h2>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="home-title">Campus Book Exchange</h1>
+    <p>A simple place for students to swap and share course textbooks.</p>
+
+    <div>
+      <button onclick="changeTitle()">Change Title</button>
+      <button onclick="changeCardColor()">Change Card Color</button>
+      <button onclick="toggleBooks()">Show/Hide Books</button>
+    </div>
+
+    <div id="books-section" class="card-container">
+      <div class="card" id="card-one">
+        <h3>C Programming</h3>
+        <p>Author: Balagurusamy</p>
+        <p>Category: Coding</p>
+      </div>
+
+      <div class="card">
+        <h3>Mathematics 1</h3>
+        <p>Author: H.K. Dass</p>
+        <p>Category: Math</p>
+      </div>
+
+      <div class="card">
+        <h3>Physics</h3>
+        <p>Author: Resnick Halliday</p>
+        <p>Category: Science</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
